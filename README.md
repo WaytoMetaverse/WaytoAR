@@ -23,9 +23,17 @@
 
 ## 部署到 GitHub Pages
 
-1. 將整個專案 push 到 GitHub。
-2. 在 repo 設定中啟用 Pages，來源選擇 `main` 分支（或對應的分支）與 `/ (root)`。
-3. 每次新增模型後重新執行 `npm run generate` 並 push，Pages 即會提供最新清單。
+專案已內建 `.github/workflows/deploy.yml`，會在 push 到 `main`（或手動執行 Workflow）時自動：
+
+1. 以 Node.js 18 執行 `scripts/generate-model-manifest.mjs`，即使沒手動跑 `npm run generate` 也能取得最新清單。
+2. 打包 `index.html`、`assets/`、`data/` 與 `model/` 成 Pages Artifact。
+3. 透過 `actions/deploy-pages@v4` 發佈到 GitHub Pages。
+
+首次設定步驟：
+
+1. 將 repo push 到 GitHub，並在 **Settings ▸ Pages** 將 **Source** 改為 **GitHub Actions**。
+2. 確認 branch 名稱與 workflow 觸發條件相符（預設 `main`）。
+3. 之後只要把新的 `.usdz`/縮圖 push 上去，網頁就會在部署完成後自動顯示新增模型。
 
 ## AR 使用注意事項
 
