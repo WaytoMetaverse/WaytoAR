@@ -1,0 +1,23 @@
+{
+  "name": "waytoar",
+  "version": "1.0.0",
+  "description": "WaytoAR 模型目錄與 AR 瀏覽頁面",
+  "type": "module",
+  "scripts": {
+    "generate": "node ./scripts/generate-model-manifest.mjs",
+    "serve": "npx http-server -c-1 -p 4173 .",
+    "start": "npm run serve"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ar",
+    "usdz",
+    "quick-look",
+    "waytoar"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+

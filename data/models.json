@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2025-11-19T06:09:42.687Z",
+  "total": 1,
+  "items": [
+    {
+      "id": "刺刺",
+      "displayName": "刺刺",
+      "fileName": "刺刺.usdz",
+      "modelPath": "model/刺刺.usdz",
+      "thumbnailPath": "model/刺刺.jpg",
+      "size": {
+        "bytes": 5417185,
+        "humanReadable": "5.2 MB"
+      },
+      "updatedAt": "2025-11-19T05:29:40.046Z"
+    }
+  ]
+}
