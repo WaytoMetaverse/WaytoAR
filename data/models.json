@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2025-11-19T08:50:39.110Z",
-  "total": 2,
+  "generatedAt": "2025-11-19T08:59:56.883Z",
+  "total": 1,
   "items": [
     {
       "id": "妖狐刺刺",
@@ -10,54 +10,29 @@
       "androidModelPath": "model/妖狐刺刺.glb",
       "thumbnailPath": "model/妖狐刺刺.jpg",
       "size": {
-        "bytes": 5417660,
-        "humanReadable": "5.2 MB"
+        "bytes": 5625008,
+        "humanReadable": "5.4 MB"
       },
-      "updatedAt": "2025-11-19T06:58:34.070Z",
+      "updatedAt": "2025-11-19T08:58:16.915Z",
       "variants": {
         "ios": {
           "fileName": "妖狐刺刺.usdz",
           "modelPath": "model/妖狐刺刺.usdz",
           "size": {
-            "bytes": 5417660,
-            "humanReadable": "5.2 MB"
+            "bytes": 5625008,
+            "humanReadable": "5.4 MB"
           },
-          "updatedAt": "2025-11-19T06:58:34.070Z"
+          "updatedAt": "2025-11-19T08:58:16.915Z"
         },
         "android": {
           "fileName": "妖狐刺刺.glb",
           "modelPath": "model/妖狐刺刺.glb",
           "size": {
-            "bytes": 2664168,
-            "humanReadable": "2.5 MB"
+            "bytes": 3028184,
+            "humanReadable": "2.9 MB"
           },
-          "updatedAt": "2025-11-19T06:59:10.265Z"
+          "updatedAt": "2025-11-19T08:58:24.286Z"
         }
-      }
-    },
-    {
-      "id": "妖狐刺刺-1",
-      "displayName": "妖狐刺刺 1",
-      "fileName": "妖狐刺刺-1.usdz",
-      "modelPath": "model/妖狐刺刺-1.usdz",
-      "androidModelPath": null,
-      "thumbnailPath": "model/妖狐刺刺-1.jpg",
-      "size": {
-        "bytes": 6627647,
-        "humanReadable": "6.3 MB"
-      },
-      "updatedAt": "2025-11-19T08:50:03.256Z",
-      "variants": {
-        "ios": {
-          "fileName": "妖狐刺刺-1.usdz",
-          "modelPath": "model/妖狐刺刺-1.usdz",
-          "size": {
-            "bytes": 6627647,
-            "humanReadable": "6.3 MB"
-          },
-          "updatedAt": "2025-11-19T08:50:03.256Z"
-        },
-        "android": null
       }
     }
   ]
