@@ -9,6 +9,7 @@ const dom = {
 };
 
 const env = detectEnvironment();
+ensureExternalBrowserParam();
 
 const state = {
   items: [],
@@ -389,6 +390,14 @@ function escapeCss(value) {
 function buildShareUrl(modelId) {
   const url = new URL(window.location.href);
   url.searchParams.set('model', modelId);
+  url.searchParams.set('openExternalBrowser', '1');
   return url.href;
+}
+
+function ensureExternalBrowserParam() {
+  const url = new URL(window.location.href);
+  if (url.searchParams.get('openExternalBrowser') === '1') return;
+  url.searchParams.set('openExternalBrowser', '1');
+  window.history.replaceState({}, document.title, `${url.pathname}${url.search}${url.hash}`);
 }
 
