@@ -4,6 +4,8 @@ import path from 'node:path';
 const MODEL_DIR = path.resolve('model');
 const OUTPUT_FILE = path.resolve('data/models.json');
 const THUMBNAIL_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp', '.avif'];
+const IOS_MODEL_EXTENSION = '.usdz';
+const ANDROID_MODEL_EXTENSION = '.glb';
 
 async function main() {
   try {
@@ -20,34 +22,56 @@ async function main() {
 async function buildManifest() {
   const dirEntries = await safeReadDir(MODEL_DIR);
   const fileNames = dirEntries.filter((entry) => entry.isFile()).map((entry) => entry.name);
-  const fileSet = new Set(fileNames);
+
+  const grouped = new Map();
+
+  for (const fileName of fileNames) {
+    const ext = path.extname(fileName).toLowerCase();
+    const baseName = path.basename(fileName, ext);
+    const group =
+      grouped.get(baseName) ??
+      {
+        baseName,
+        assets: {},
+        thumbnail: null,
+      };
+
+    if (ext === IOS_MODEL_EXTENSION) {
+      group.assets.ios = await describeAsset(fileName);
+    } else if (ext === ANDROID_MODEL_EXTENSION) {
+      group.assets.android = await describeAsset(fileName);
+    } else if (THUMBNAIL_EXTENSIONS.includes(ext)) {
+      group.thumbnail = fileName;
+    }
+
+    grouped.set(baseName, group);
+  }
 
   const models = [];
 
-  for (const fileName of fileNames) {
-    if (path.extname(fileName).toLowerCase() !== '.usdz') continue;
+  for (const { baseName, assets, thumbnail } of grouped.values()) {
+    if (!assets.ios && !assets.android) continue;
 
-    const baseName = path.basename(fileName, path.extname(fileName));
-    const modelPath = path.join('model', fileName);
-    const absoluteModelPath = path.join(MODEL_DIR, fileName);
-    const fileStats = await stat(absoluteModelPath);
-    const thumbnail = findThumbnail(baseName, fileSet);
+    const primaryAsset = assets.ios ?? assets.android;
+    const thumbnailPath = thumbnail ? toPosix(path.join('model', thumbnail)) : null;
 
-    if (!thumbnail) {
-      console.warn(`[WaytoAR] 找不到 ${fileName} 對應的縮圖，將以預設樣式呈現。`);
+    if (!thumbnailPath) {
+      console.warn(`[WaytoAR] 找不到 ${baseName} 對應的縮圖，將以預設樣式呈現。`);
     }
 
     models.push({
       id: baseName,
       displayName: prettifyName(baseName),
-      fileName,
-      modelPath: toPosix(modelPath),
-      thumbnailPath: thumbnail ? toPosix(path.join('model', thumbnail)) : null,
-      size: {
-        bytes: fileStats.size,
-        humanReadable: formatFileSize(fileStats.size),
+      fileName: primaryAsset.fileName,
+      modelPath: assets.ios?.modelPath ?? null,
+      androidModelPath: assets.android?.modelPath ?? null,
+      thumbnailPath,
+      size: primaryAsset.size,
+      updatedAt: primaryAsset.updatedAt,
+      variants: {
+        ios: assets.ios ?? null,
+        android: assets.android ?? null,
       },
-      updatedAt: fileStats.mtime.toISOString(),
     });
   }
 
@@ -71,14 +95,19 @@ async function safeReadDir(target) {
   }
 }
 
-function findThumbnail(baseName, fileSet) {
-  for (const ext of THUMBNAIL_EXTENSIONS) {
-    const candidate = `${baseName}${ext}`;
-    if (fileSet.has(candidate)) {
-      return candidate;
-    }
-  }
-  return null;
+async function describeAsset(fileName) {
+  const relativePath = path.join('model', fileName);
+  const absoluteModelPath = path.join(MODEL_DIR, fileName);
+  const fileStats = await stat(absoluteModelPath);
+  return {
+    fileName,
+    modelPath: toPosix(relativePath),
+    size: {
+      bytes: fileStats.size,
+      humanReadable: formatFileSize(fileStats.size),
+    },
+    updatedAt: fileStats.mtime.toISOString(),
+  };
 }
 
 function formatFileSize(bytes) {

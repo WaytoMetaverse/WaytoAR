@@ -33,8 +33,8 @@
     <main>
       <section class="info-banner">
         <p>
-          <strong>使用提示：</strong>iPhone 或 iPad 的 Safari 點擊「開啟 AR」即可啟動
-          Quick Look；其他裝置可以先預覽縮圖或複製連結分享。
+          <strong>使用提示：</strong>iOS 需以 Safari 開啟才能啟動 Quick Look；Android
+          請改用 Chrome / Scene Viewer。若在 LINE 或其他 App 內開啟，請選擇「在瀏覽器中開啟」後再使用 AR。
         </p>
       </section>
 
@@ -44,7 +44,7 @@
     </main>
 
     <template id="modelCardTemplate">
-      <article class="model-card">
+      <article class="model-card" data-model-card>
         <div class="model-card__media">
           <img data-thumbnail alt="" loading="lazy" decoding="async" />
           <div class="model-card__placeholder" data-placeholder hidden></div>
@@ -53,6 +53,7 @@
           <div>
             <p class="model-card__name" data-name></p>
             <p class="model-card__meta" data-meta></p>
+            <div class="model-card__badges" data-badges></div>
           </div>
           <div class="model-card__actions">
             <a class="btn primary" rel="ar" data-ar-button>開啟 AR</a>

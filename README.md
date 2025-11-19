@@ -18,8 +18,9 @@
 ## 新增 / 更新模型流程
 
 1. 把 `.usdz` 放在 `model/`，並放入同檔名縮圖（支援 `.jpg/.jpeg/.png/.webp/.avif`）。
-2. 執行 `npm run generate` 重新寫入 `data/models.json`。
-3. 重新整理網頁即可看到新模型。若部署到 GitHub Pages，記得把更新後的 `data/models.json` 一併提交。
+2. 若需支援 Android AR，額外放入同檔名的 `.glb`（例如 `妖狐刺刺.usdz` + `妖狐刺刺.glb`）。
+3. 執行 `npm run generate` 重新寫入 `data/models.json`，腳本會自動比對並生成 iOS/Android 兩種路徑。
+4. 重新整理網頁即可看到新模型。若部署到 GitHub Pages，記得把更新後的 `data/models.json` 一併提交。
 
 ## 部署到 GitHub Pages
 
@@ -38,8 +39,10 @@
 ## AR 使用注意事項
 
 - `開啟 AR` 按鈕使用 Apple Quick Look：需以 iOS / iPadOS 的 Safari 開啟。
-- 桌機或 Android 裝置可先瀏覽縮圖、複製連結分享給支援 AR 的裝置。
-- 若需要支援 Android 原生 AR，可另行提供 `.glb` / `.gltf` 並延伸此網頁。
+- LINE、IG 等 App 內建瀏覽器無法調用 Quick Look 或 Scene Viewer，頁面會提示使用者改以 Safari / Chrome 開啟。
+- Android 必須具備 ARCore 與 Chrome 才能啟用 Scene Viewer，並需要同名 `.glb` 模型。
+- 若缺少 `.glb`，按鈕會顯示「缺少 GLB」提示；請在 `model/` 中補上對應檔案後重新執行 `npm run generate`。
+- 複製連結會自動帶上 `?model=<ID>`，貼給他人時可直接定位到該模型。
 
 ## 專案結構
 

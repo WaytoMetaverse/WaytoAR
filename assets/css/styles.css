@@ -142,6 +142,12 @@ main {
   margin-bottom: 1.5rem;
 }
 
+.status-bar[data-tone='warning'] {
+  border-color: var(--warning-border);
+  color: #fcd34d;
+  background: var(--warning-bg);
+}
+
 .model-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -199,6 +205,33 @@ main {
   font-size: 0.9rem;
 }
 
+.model-card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.45rem;
+}
+
+.badge {
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--muted);
+}
+
+.badge.warning {
+  border-color: rgba(251, 191, 36, 0.6);
+  color: #fcd34d;
+}
+
+.badge.info {
+  border-color: rgba(56, 189, 248, 0.4);
+  color: var(--accent);
+}
+
 .model-card__actions {
   display: flex;
   gap: 0.6rem;
@@ -233,9 +266,28 @@ main {
   opacity: 0.95;
 }
 
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn[aria-disabled='true'],
+.btn.is-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none;
+}
+
 .btn.error {
   border-color: rgba(248, 113, 113, 0.65);
   color: #fecaca;
+}
+
+.model-card.is-highlighted {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.3), 0 10px 35px rgba(2, 6, 23, 0.5);
 }
 
 .empty-state {
