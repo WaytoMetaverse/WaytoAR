@@ -1,37 +1,664 @@
 {
-  "generatedAt": "2025-11-19T08:59:56.883Z",
-  "total": 1,
+  "generatedAt": "2025-11-30T13:12:12.363Z",
+  "total": 20,
   "items": [
     {
-      "id": "妖狐刺刺",
-      "displayName": "妖狐刺刺",
-      "fileName": "妖狐刺刺.usdz",
-      "modelPath": "model/妖狐刺刺.usdz",
-      "androidModelPath": "model/妖狐刺刺.glb",
-      "thumbnailPath": "model/妖狐刺刺.jpg",
+      "id": "史姆66A02",
+      "displayName": "史姆66A02",
+      "fileName": "史姆66A02.usdz",
+      "modelPath": "model/史姆66A02.usdz",
+      "androidModelPath": "model/史姆66A02.glb",
+      "thumbnailPath": "model/史姆66A02.jpg",
       "size": {
-        "bytes": 5625008,
-        "humanReadable": "5.4 MB"
+        "bytes": 3757110,
+        "humanReadable": "3.6 MB"
       },
-      "updatedAt": "2025-11-19T08:58:16.915Z",
+      "updatedAt": "2025-11-30T12:53:21.493Z",
       "variants": {
         "ios": {
-          "fileName": "妖狐刺刺.usdz",
-          "modelPath": "model/妖狐刺刺.usdz",
+          "fileName": "史姆66A02.usdz",
+          "modelPath": "model/史姆66A02.usdz",
           "size": {
-            "bytes": 5625008,
-            "humanReadable": "5.4 MB"
+            "bytes": 3757110,
+            "humanReadable": "3.6 MB"
           },
-          "updatedAt": "2025-11-19T08:58:16.915Z"
+          "updatedAt": "2025-11-30T12:53:21.493Z"
         },
         "android": {
-          "fileName": "妖狐刺刺.glb",
-          "modelPath": "model/妖狐刺刺.glb",
+          "fileName": "史姆66A02.glb",
+          "modelPath": "model/史姆66A02.glb",
           "size": {
-            "bytes": 3028184,
+            "bytes": 5009444,
+            "humanReadable": "4.8 MB"
+          },
+          "updatedAt": "2025-11-30T12:48:12.287Z"
+        }
+      }
+    },
+    {
+      "id": "史姆原色",
+      "displayName": "史姆原色",
+      "fileName": "史姆原色.usdz",
+      "modelPath": "model/史姆原色.usdz",
+      "androidModelPath": "model/史姆原色.glb",
+      "thumbnailPath": "model/史姆原色.jpg",
+      "size": {
+        "bytes": 3088288,
+        "humanReadable": "2.9 MB"
+      },
+      "updatedAt": "2025-11-30T12:53:40.083Z",
+      "variants": {
+        "ios": {
+          "fileName": "史姆原色.usdz",
+          "modelPath": "model/史姆原色.usdz",
+          "size": {
+            "bytes": 3088288,
             "humanReadable": "2.9 MB"
           },
-          "updatedAt": "2025-11-19T08:58:24.286Z"
+          "updatedAt": "2025-11-30T12:53:40.083Z"
+        },
+        "android": {
+          "fileName": "史姆原色.glb",
+          "modelPath": "model/史姆原色.glb",
+          "size": {
+            "bytes": 4039536,
+            "humanReadable": "3.9 MB"
+          },
+          "updatedAt": "2025-11-30T12:45:17.571Z"
+        }
+      }
+    },
+    {
+      "id": "佩特拉518D",
+      "displayName": "佩特拉518D",
+      "fileName": "佩特拉518D.usdz",
+      "modelPath": "model/佩特拉518D.usdz",
+      "androidModelPath": "model/佩特拉518D.glb",
+      "thumbnailPath": "model/佩特拉518D.jpg",
+      "size": {
+        "bytes": 3702534,
+        "humanReadable": "3.5 MB"
+      },
+      "updatedAt": "2025-11-30T12:52:37.270Z",
+      "variants": {
+        "ios": {
+          "fileName": "佩特拉518D.usdz",
+          "modelPath": "model/佩特拉518D.usdz",
+          "size": {
+            "bytes": 3702534,
+            "humanReadable": "3.5 MB"
+          },
+          "updatedAt": "2025-11-30T12:52:37.270Z"
+        },
+        "android": {
+          "fileName": "佩特拉518D.glb",
+          "modelPath": "model/佩特拉518D.glb",
+          "size": {
+            "bytes": 4976648,
+            "humanReadable": "4.7 MB"
+          },
+          "updatedAt": "2025-11-30T12:34:48.330Z"
+        }
+      }
+    },
+    {
+      "id": "佩特拉MATTM19",
+      "displayName": "佩特拉MATTM19",
+      "fileName": "佩特拉MATTM19.usdz",
+      "modelPath": "model/佩特拉MATTM19.usdz",
+      "androidModelPath": "model/佩特拉MATTM19.glb",
+      "thumbnailPath": "model/佩特拉MATTM19.jpg",
+      "size": {
+        "bytes": 3363364,
+        "humanReadable": "3.2 MB"
+      },
+      "updatedAt": "2025-11-30T12:53:01.246Z",
+      "variants": {
+        "ios": {
+          "fileName": "佩特拉MATTM19.usdz",
+          "modelPath": "model/佩特拉MATTM19.usdz",
+          "size": {
+            "bytes": 3363364,
+            "humanReadable": "3.2 MB"
+          },
+          "updatedAt": "2025-11-30T12:53:01.246Z"
+        },
+        "android": {
+          "fileName": "佩特拉MATTM19.glb",
+          "modelPath": "model/佩特拉MATTM19.glb",
+          "size": {
+            "bytes": 4695432,
+            "humanReadable": "4.5 MB"
+          },
+          "updatedAt": "2025-11-30T12:35:35.295Z"
+        }
+      }
+    },
+    {
+      "id": "洛司堤U3",
+      "displayName": "洛司堤U3",
+      "fileName": "洛司堤U3.usdz",
+      "modelPath": "model/洛司堤U3.usdz",
+      "androidModelPath": "model/洛司堤U3.glb",
+      "thumbnailPath": "model/洛司堤U3.jpg",
+      "size": {
+        "bytes": 3915960,
+        "humanReadable": "3.7 MB"
+      },
+      "updatedAt": "2025-11-30T12:59:11.501Z",
+      "variants": {
+        "ios": {
+          "fileName": "洛司堤U3.usdz",
+          "modelPath": "model/洛司堤U3.usdz",
+          "size": {
+            "bytes": 3915960,
+            "humanReadable": "3.7 MB"
+          },
+          "updatedAt": "2025-11-30T12:59:11.501Z"
+        },
+        "android": {
+          "fileName": "洛司堤U3.glb",
+          "modelPath": "model/洛司堤U3.glb",
+          "size": {
+            "bytes": 5612736,
+            "humanReadable": "5.4 MB"
+          },
+          "updatedAt": "2025-11-30T12:50:43.926Z"
+        }
+      }
+    },
+    {
+      "id": "洛司堤V3",
+      "displayName": "洛司堤V3",
+      "fileName": "洛司堤V3.usdz",
+      "modelPath": "model/洛司堤V3.usdz",
+      "androidModelPath": "model/洛司堤V3.glb",
+      "thumbnailPath": "model/洛司堤V3.jpg",
+      "size": {
+        "bytes": 3588364,
+        "humanReadable": "3.4 MB"
+      },
+      "updatedAt": "2025-11-30T12:59:24.620Z",
+      "variants": {
+        "ios": {
+          "fileName": "洛司堤V3.usdz",
+          "modelPath": "model/洛司堤V3.usdz",
+          "size": {
+            "bytes": 3588364,
+            "humanReadable": "3.4 MB"
+          },
+          "updatedAt": "2025-11-30T12:59:24.620Z"
+        },
+        "android": {
+          "fileName": "洛司堤V3.glb",
+          "modelPath": "model/洛司堤V3.glb",
+          "size": {
+            "bytes": 4922884,
+            "humanReadable": "4.7 MB"
+          },
+          "updatedAt": "2025-11-30T12:49:41.208Z"
+        }
+      }
+    },
+    {
+      "id": "莎芙銀S-06",
+      "displayName": "莎芙銀S 06",
+      "fileName": "莎芙銀S-06.usdz",
+      "modelPath": "model/莎芙銀S-06.usdz",
+      "androidModelPath": "model/莎芙銀S-06.glb",
+      "thumbnailPath": "model/莎芙銀S-06.jpg",
+      "size": {
+        "bytes": 2850312,
+        "humanReadable": "2.7 MB"
+      },
+      "updatedAt": "2025-11-30T13:01:55.170Z",
+      "variants": {
+        "ios": {
+          "fileName": "莎芙銀S-06.usdz",
+          "modelPath": "model/莎芙銀S-06.usdz",
+          "size": {
+            "bytes": 2850312,
+            "humanReadable": "2.7 MB"
+          },
+          "updatedAt": "2025-11-30T13:01:55.170Z"
+        },
+        "android": {
+          "fileName": "莎芙銀S-06.glb",
+          "modelPath": "model/莎芙銀S-06.glb",
+          "size": {
+            "bytes": 3947212,
+            "humanReadable": "3.8 MB"
+          },
+          "updatedAt": "2025-11-30T12:30:58.002Z"
+        }
+      }
+    },
+    {
+      "id": "莎芙銀S-18",
+      "displayName": "莎芙銀S 18",
+      "fileName": "莎芙銀S-18.usdz",
+      "modelPath": "model/莎芙銀S-18.usdz",
+      "androidModelPath": "model/莎芙銀S-18.glb",
+      "thumbnailPath": "model/莎芙銀S-18.jpg",
+      "size": {
+        "bytes": 3316882,
+        "humanReadable": "3.2 MB"
+      },
+      "updatedAt": "2025-11-30T13:02:08.080Z",
+      "variants": {
+        "ios": {
+          "fileName": "莎芙銀S-18.usdz",
+          "modelPath": "model/莎芙銀S-18.usdz",
+          "size": {
+            "bytes": 3316882,
+            "humanReadable": "3.2 MB"
+          },
+          "updatedAt": "2025-11-30T13:02:08.080Z"
+        },
+        "android": {
+          "fileName": "莎芙銀S-18.glb",
+          "modelPath": "model/莎芙銀S-18.glb",
+          "size": {
+            "bytes": 4650620,
+            "humanReadable": "4.4 MB"
+          },
+          "updatedAt": "2025-11-30T12:32:38.940Z"
+        }
+      }
+    },
+    {
+      "id": "塔圖U-4",
+      "displayName": "塔圖U 4",
+      "fileName": "塔圖U-4.usdz",
+      "modelPath": "model/塔圖U-4.usdz",
+      "androidModelPath": "model/塔圖U-4.glb",
+      "thumbnailPath": "model/塔圖U-4.jpg",
+      "size": {
+        "bytes": 2128337,
+        "humanReadable": "2.0 MB"
+      },
+      "updatedAt": "2025-11-30T12:53:53.973Z",
+      "variants": {
+        "ios": {
+          "fileName": "塔圖U-4.usdz",
+          "modelPath": "model/塔圖U-4.usdz",
+          "size": {
+            "bytes": 2128337,
+            "humanReadable": "2.0 MB"
+          },
+          "updatedAt": "2025-11-30T12:53:53.973Z"
+        },
+        "android": {
+          "fileName": "塔圖U-4.glb",
+          "modelPath": "model/塔圖U-4.glb",
+          "size": {
+            "bytes": 2885212,
+            "humanReadable": "2.8 MB"
+          },
+          "updatedAt": "2025-11-30T12:16:22.852Z"
+        }
+      }
+    },
+    {
+      "id": "塔圖V-3",
+      "displayName": "塔圖V 3",
+      "fileName": "塔圖V-3.usdz",
+      "modelPath": "model/塔圖V-3.usdz",
+      "androidModelPath": "model/塔圖V-3.glb",
+      "thumbnailPath": "model/塔圖V-3.jpg",
+      "size": {
+        "bytes": 3020317,
+        "humanReadable": "2.9 MB"
+      },
+      "updatedAt": "2025-11-30T12:54:11.770Z",
+      "variants": {
+        "ios": {
+          "fileName": "塔圖V-3.usdz",
+          "modelPath": "model/塔圖V-3.usdz",
+          "size": {
+            "bytes": 3020317,
+            "humanReadable": "2.9 MB"
+          },
+          "updatedAt": "2025-11-30T12:54:11.770Z"
+        },
+        "android": {
+          "fileName": "塔圖V-3.glb",
+          "modelPath": "model/塔圖V-3.glb",
+          "size": {
+            "bytes": 4114460,
+            "humanReadable": "3.9 MB"
+          },
+          "updatedAt": "2025-11-30T12:22:21.083Z"
+        }
+      }
+    },
+    {
+      "id": "塔圖Y-04",
+      "displayName": "塔圖Y 04",
+      "fileName": "塔圖Y-04.usdz",
+      "modelPath": "model/塔圖Y-04.usdz",
+      "androidModelPath": "model/塔圖Y-04.glb",
+      "thumbnailPath": "model/塔圖Y-04.jpg",
+      "size": {
+        "bytes": 2482892,
+        "humanReadable": "2.4 MB"
+      },
+      "updatedAt": "2025-11-30T12:54:24.724Z",
+      "variants": {
+        "ios": {
+          "fileName": "塔圖Y-04.usdz",
+          "modelPath": "model/塔圖Y-04.usdz",
+          "size": {
+            "bytes": 2482892,
+            "humanReadable": "2.4 MB"
+          },
+          "updatedAt": "2025-11-30T12:54:24.724Z"
+        },
+        "android": {
+          "fileName": "塔圖Y-04.glb",
+          "modelPath": "model/塔圖Y-04.glb",
+          "size": {
+            "bytes": 3331644,
+            "humanReadable": "3.2 MB"
+          },
+          "updatedAt": "2025-11-30T12:03:29.962Z"
+        }
+      }
+    },
+    {
+      "id": "塔圖Y-06",
+      "displayName": "塔圖Y 06",
+      "fileName": "塔圖Y-06.usdz",
+      "modelPath": "model/塔圖Y-06.usdz",
+      "androidModelPath": "model/塔圖Y-06.glb",
+      "thumbnailPath": "model/塔圖Y-06.jpg",
+      "size": {
+        "bytes": 3196779,
+        "humanReadable": "3.0 MB"
+      },
+      "updatedAt": "2025-11-30T12:54:38.672Z",
+      "variants": {
+        "ios": {
+          "fileName": "塔圖Y-06.usdz",
+          "modelPath": "model/塔圖Y-06.usdz",
+          "size": {
+            "bytes": 3196779,
+            "humanReadable": "3.0 MB"
+          },
+          "updatedAt": "2025-11-30T12:54:38.672Z"
+        },
+        "android": {
+          "fileName": "塔圖Y-06.glb",
+          "modelPath": "model/塔圖Y-06.glb",
+          "size": {
+            "bytes": 4452572,
+            "humanReadable": "4.2 MB"
+          },
+          "updatedAt": "2025-11-30T12:04:27.439Z"
+        }
+      }
+    },
+    {
+      "id": "塔圖Y-122",
+      "displayName": "塔圖Y 122",
+      "fileName": "塔圖Y-122.usdz",
+      "modelPath": "model/塔圖Y-122.usdz",
+      "androidModelPath": "model/塔圖Y-122.glb",
+      "thumbnailPath": "model/塔圖Y-122.jpg",
+      "size": {
+        "bytes": 3219925,
+        "humanReadable": "3.1 MB"
+      },
+      "updatedAt": "2025-11-30T12:55:10.746Z",
+      "variants": {
+        "ios": {
+          "fileName": "塔圖Y-122.usdz",
+          "modelPath": "model/塔圖Y-122.usdz",
+          "size": {
+            "bytes": 3219925,
+            "humanReadable": "3.1 MB"
+          },
+          "updatedAt": "2025-11-30T12:55:10.746Z"
+        },
+        "android": {
+          "fileName": "塔圖Y-122.glb",
+          "modelPath": "model/塔圖Y-122.glb",
+          "size": {
+            "bytes": 4258612,
+            "humanReadable": "4.1 MB"
+          },
+          "updatedAt": "2025-11-30T12:08:40.780Z"
+        }
+      }
+    },
+    {
+      "id": "塔圖Y-19",
+      "displayName": "塔圖Y 19",
+      "fileName": "塔圖Y-19.usdz",
+      "modelPath": "model/塔圖Y-19.usdz",
+      "androidModelPath": "model/塔圖Y-19.glb",
+      "thumbnailPath": "model/塔圖Y-19.jpg",
+      "size": {
+        "bytes": 3294927,
+        "humanReadable": "3.1 MB"
+      },
+      "updatedAt": "2025-11-30T12:54:53.090Z",
+      "variants": {
+        "ios": {
+          "fileName": "塔圖Y-19.usdz",
+          "modelPath": "model/塔圖Y-19.usdz",
+          "size": {
+            "bytes": 3294927,
+            "humanReadable": "3.1 MB"
+          },
+          "updatedAt": "2025-11-30T12:54:53.090Z"
+        },
+        "android": {
+          "fileName": "塔圖Y-19.glb",
+          "modelPath": "model/塔圖Y-19.glb",
+          "size": {
+            "bytes": 4623756,
+            "humanReadable": "4.4 MB"
+          },
+          "updatedAt": "2025-11-30T12:07:45.907Z"
+        }
+      }
+    },
+    {
+      "id": "奧帕銀F-04",
+      "displayName": "奧帕銀F 04",
+      "fileName": "奧帕銀F-04.usdz",
+      "modelPath": "model/奧帕銀F-04.usdz",
+      "androidModelPath": "model/奧帕銀F-04.glb",
+      "thumbnailPath": "model/奧帕銀F-04.jpg",
+      "size": {
+        "bytes": 3059942,
+        "humanReadable": "2.9 MB"
+      },
+      "updatedAt": "2025-11-30T12:55:24.617Z",
+      "variants": {
+        "ios": {
+          "fileName": "奧帕銀F-04.usdz",
+          "modelPath": "model/奧帕銀F-04.usdz",
+          "size": {
+            "bytes": 3059942,
+            "humanReadable": "2.9 MB"
+          },
+          "updatedAt": "2025-11-30T12:55:24.617Z"
+        },
+        "android": {
+          "fileName": "奧帕銀F-04.glb",
+          "modelPath": "model/奧帕銀F-04.glb",
+          "size": {
+            "bytes": 4113024,
+            "humanReadable": "3.9 MB"
+          },
+          "updatedAt": "2025-11-30T12:25:58.838Z"
+        }
+      }
+    },
+    {
+      "id": "奧帕銀F-106",
+      "displayName": "奧帕銀F 106",
+      "fileName": "奧帕銀F-106.usdz",
+      "modelPath": "model/奧帕銀F-106.usdz",
+      "androidModelPath": "model/奧帕銀F-106.glb",
+      "thumbnailPath": "model/奧帕銀F-106.jpg",
+      "size": {
+        "bytes": 3171355,
+        "humanReadable": "3.0 MB"
+      },
+      "updatedAt": "2025-11-30T12:55:36.309Z",
+      "variants": {
+        "ios": {
+          "fileName": "奧帕銀F-106.usdz",
+          "modelPath": "model/奧帕銀F-106.usdz",
+          "size": {
+            "bytes": 3171355,
+            "humanReadable": "3.0 MB"
+          },
+          "updatedAt": "2025-11-30T12:55:36.309Z"
+        },
+        "android": {
+          "fileName": "奧帕銀F-106.glb",
+          "modelPath": "model/奧帕銀F-106.glb",
+          "size": {
+            "bytes": 4334312,
+            "humanReadable": "4.1 MB"
+          },
+          "updatedAt": "2025-11-30T12:26:48.345Z"
+        }
+      }
+    },
+    {
+      "id": "奧帕銀T-4",
+      "displayName": "奧帕銀T 4",
+      "fileName": "奧帕銀T-4.usdz",
+      "modelPath": "model/奧帕銀T-4.usdz",
+      "androidModelPath": "model/奧帕銀T-4.glb",
+      "thumbnailPath": "model/奧帕銀T-4.jpg",
+      "size": {
+        "bytes": 2922588,
+        "humanReadable": "2.8 MB"
+      },
+      "updatedAt": "2025-11-30T12:55:52.294Z",
+      "variants": {
+        "ios": {
+          "fileName": "奧帕銀T-4.usdz",
+          "modelPath": "model/奧帕銀T-4.usdz",
+          "size": {
+            "bytes": 2922588,
+            "humanReadable": "2.8 MB"
+          },
+          "updatedAt": "2025-11-30T12:55:52.294Z"
+        },
+        "android": {
+          "fileName": "奧帕銀T-4.glb",
+          "modelPath": "model/奧帕銀T-4.glb",
+          "size": {
+            "bytes": 3886884,
+            "humanReadable": "3.7 MB"
+          },
+          "updatedAt": "2025-11-30T12:30:07.933Z"
+        }
+      }
+    },
+    {
+      "id": "奧帕銀U-3",
+      "displayName": "奧帕銀U 3",
+      "fileName": "奧帕銀U-3.usdz",
+      "modelPath": "model/奧帕銀U-3.usdz",
+      "androidModelPath": "model/奧帕銀U-3.glb",
+      "thumbnailPath": "model/奧帕銀U-3.jpg",
+      "size": {
+        "bytes": 3099702,
+        "humanReadable": "3.0 MB"
+      },
+      "updatedAt": "2025-11-30T12:56:05.506Z",
+      "variants": {
+        "ios": {
+          "fileName": "奧帕銀U-3.usdz",
+          "modelPath": "model/奧帕銀U-3.usdz",
+          "size": {
+            "bytes": 3099702,
+            "humanReadable": "3.0 MB"
+          },
+          "updatedAt": "2025-11-30T12:56:05.506Z"
+        },
+        "android": {
+          "fileName": "奧帕銀U-3.glb",
+          "modelPath": "model/奧帕銀U-3.glb",
+          "size": {
+            "bytes": 4159800,
+            "humanReadable": "4.0 MB"
+          },
+          "updatedAt": "2025-11-30T12:28:15.705Z"
+        }
+      }
+    },
+    {
+      "id": "聖馬托2502",
+      "displayName": "聖馬托2502",
+      "fileName": "聖馬托2502.usdz",
+      "modelPath": "model/聖馬托2502.usdz",
+      "androidModelPath": "model/聖馬托2502.glb",
+      "thumbnailPath": "model/聖馬托2502.jpg",
+      "size": {
+        "bytes": 2767162,
+        "humanReadable": "2.6 MB"
+      },
+      "updatedAt": "2025-11-30T13:01:19.293Z",
+      "variants": {
+        "ios": {
+          "fileName": "聖馬托2502.usdz",
+          "modelPath": "model/聖馬托2502.usdz",
+          "size": {
+            "bytes": 2767162,
+            "humanReadable": "2.6 MB"
+          },
+          "updatedAt": "2025-11-30T13:01:19.293Z"
+        },
+        "android": {
+          "fileName": "聖馬托2502.glb",
+          "modelPath": "model/聖馬托2502.glb",
+          "size": {
+            "bytes": 3678208,
+            "humanReadable": "3.5 MB"
+          },
+          "updatedAt": "2025-11-30T12:43:30.473Z"
+        }
+      }
+    },
+    {
+      "id": "聖馬托2505",
+      "displayName": "聖馬托2505",
+      "fileName": "聖馬托2505.usdz",
+      "modelPath": "model/聖馬托2505.usdz",
+      "androidModelPath": "model/聖馬托2505.glb",
+      "thumbnailPath": "model/聖馬托2505.jpg",
+      "size": {
+        "bytes": 1748580,
+        "humanReadable": "1.7 MB"
+      },
+      "updatedAt": "2025-11-30T13:01:32.223Z",
+      "variants": {
+        "ios": {
+          "fileName": "聖馬托2505.usdz",
+          "modelPath": "model/聖馬托2505.usdz",
+          "size": {
+            "bytes": 1748580,
+            "humanReadable": "1.7 MB"
+          },
+          "updatedAt": "2025-11-30T13:01:32.223Z"
+        },
+        "android": {
+          "fileName": "聖馬托2505.glb",
+          "modelPath": "model/聖馬托2505.glb",
+          "size": {
+            "bytes": 2405764,
+            "humanReadable": "2.3 MB"
+          },
+          "updatedAt": "2025-11-30T12:44:12.223Z"
         }
       }
     }
