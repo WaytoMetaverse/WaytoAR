@@ -85,7 +85,7 @@ function createCard(item) {
   const thumbnailEl = node.querySelector('[data-thumbnail]');
   const placeholderEl = node.querySelector('[data-placeholder]');
   const arButton = node.querySelector('[data-ar-button]');
-  const copyButton = node.querySelector('[data-copy]');
+  const detailLink = node.querySelector('[data-detail-link]');
 
   nameEl.textContent = item.displayName || item.id;
   metaEl.textContent = 'LUXUS Paint Taiwan 總代理';
@@ -103,7 +103,7 @@ function createCard(item) {
   }
 
   configureArButton(arButton, item, nameEl.textContent);
-  configureCopyButton(copyButton, item);
+  configureDetailLink(detailLink, item);
 
   return node;
 }
@@ -133,9 +133,9 @@ function configureArButton(button, item, displayName) {
   });
 }
 
-function configureCopyButton(button, item) {
+function configureDetailLink(link, item) {
   const productUrl = getProductUrl(item.id);
-  button.addEventListener('click', () => copyLink(productUrl, button));
+  link.href = productUrl;
 }
 
 function renderBadges(container, item) {
