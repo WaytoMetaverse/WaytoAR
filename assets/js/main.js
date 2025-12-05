@@ -4,7 +4,6 @@ const dom = {
   grid: document.getElementById('modelGrid'),
   status: document.getElementById('statusBar'),
   search: document.getElementById('searchInput'),
-  refresh: document.getElementById('refreshButton'),
   template: document.getElementById('modelCardTemplate'),
 };
 
@@ -20,7 +19,6 @@ init();
 
 function init() {
   dom.search.addEventListener('input', () => applyFilter(dom.search.value));
-  dom.refresh.addEventListener('click', () => loadModels(true));
   loadModels();
 }
 
