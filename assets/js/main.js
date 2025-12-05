@@ -88,7 +88,7 @@ function createCard(item) {
   const copyButton = node.querySelector('[data-copy]');
 
   nameEl.textContent = item.displayName || item.id;
-  metaEl.textContent = `${item.size?.humanReadable ?? '---'} ｜ 更新：${formatDate(item.updatedAt)}`;
+  metaEl.textContent = 'LUXUS Paint Taiwan 總代理';
 
   renderBadges(badgesEl, item);
 
@@ -134,8 +134,8 @@ function configureArButton(button, item, displayName) {
 }
 
 function configureCopyButton(button, item) {
-  const shareUrl = buildShareUrl(item.id);
-  button.addEventListener('click', () => copyLink(shareUrl, button));
+  const productUrl = getProductUrl(item.id);
+  button.addEventListener('click', () => copyLink(productUrl, button));
 }
 
 function renderBadges(container, item) {
@@ -392,6 +392,53 @@ function buildShareUrl(modelId) {
   url.searchParams.set('model', modelId);
   url.searchParams.set('openExternalBrowser', '1');
   return url.href;
+}
+
+function getProductUrl(modelId) {
+  const baseUrl = 'https://www.luxuspainttaiwan.com.tw/product_detail';
+  const normalizedId = modelId.toLowerCase().replace(/\s+/g, '').replace(/cod\./g, '');
+  
+  const mapping = {
+    '塔圖y-04': 3,
+    '塔圖y04': 3,
+    '塔圖y-06': 3,
+    '塔圖y06': 3,
+    '塔圖y-19': 3,
+    '塔圖y19': 3,
+    '塔圖y-122': 3,
+    '塔圖y122': 3,
+    '塔圖v-3': 3,
+    '塔圖v3': 3,
+    '塔圖u-4': 3,
+    '塔圖u4': 3,
+    '奧帕銀f-04': 4,
+    '奧帕銀f04': 4,
+    '奧帕銀f-106': 4,
+    '奧帕銀f106': 4,
+    '奧帕銀u-3': 4,
+    '奧帕銀u3': 4,
+    '奧帕銀t-4': 4,
+    '奧帕銀t4': 4,
+    '莎芙銀s-06': 7,
+    '莎芙銀s06': 7,
+    '莎芙銀s-18': 7,
+    '莎芙銀s18': 7,
+    '佩特拉518d': 15,
+    '佩特拉mattm19': 21,
+    '聖馬托2502': 6,
+    '聖馬托2505': 6,
+    '史姆原色': 24,
+    '史姆66a02': 24,
+    '洛司堤v3': 25,
+    '洛司堤u3': 25,
+  };
+  
+  const itemId = mapping[normalizedId];
+  if (itemId) {
+    return `${baseUrl}?item=${itemId}`;
+  }
+  
+  return baseUrl;
 }
 
 function ensureExternalBrowserParam() {

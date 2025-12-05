@@ -134,12 +134,7 @@ main {
 }
 
 .status-bar {
-  border: 1px solid var(--border);
-  background: rgba(15, 17, 26, 0.65);
-  border-radius: 0.9rem;
-  padding: 0.85rem 1rem;
-  color: var(--muted);
-  margin-bottom: 1.5rem;
+  display: none;
 }
 
 .status-bar[data-tone='warning'] {
@@ -297,6 +292,20 @@ main {
   border: 1px dashed var(--border);
   border-radius: 1rem;
   color: var(--muted);
+}
+
+.page-footer {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+}
+
+.page-footer p {
+  margin: 0;
 }
 
 @media (max-width: 720px) {
